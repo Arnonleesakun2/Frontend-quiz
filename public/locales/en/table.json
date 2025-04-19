@@ -1,0 +1,9 @@
+{
+    "column1": "Name",
+    "column2": "Gender",
+    "column3": "Mobile Phone",
+    "column4": "Nationality",
+    "column5": "Manage",
+    "edit" : "Edit",
+    "delete" : "Delete"
+}

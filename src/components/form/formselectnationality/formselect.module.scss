@@ -1,0 +1,26 @@
+.formselect {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+  :global(.ant-select) {
+    width: 100%;
+  }
+  label {
+    color: red;
+    display: flex;
+    gap: 5px;
+  }
+  span {
+    color: black;
+    text-transform: capitalize;
+  }
+  .error{
+    color: #ff4d4f;
+    position: absolute;
+    font-size: 10px;
+    bottom: -12px;
+    right: 30px;
+  }
+}
+

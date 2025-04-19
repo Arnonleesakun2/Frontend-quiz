@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: calc(100vh - 50px);
+  a {
+    text-decoration: none;
+  }
+  :global(.ant-card) {
+    border-radius: 5px;
+  }
+  :global(.ant-card-head-title) {
+    font-weight: 700;
+  }
+}

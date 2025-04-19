@@ -1,0 +1,161 @@
+$btn-color: #ffffff;
+$btn-border: rgba(255, 255, 255, 0.7);
+$shape-color: #8a8a8a;
+$btn-width: 240px;
+$btn-height: 120px;
+$gap: 5px;
+
+.moveshapecontainer {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: $gap;
+  margin: 10px auto;
+  max-width: fit-content;
+  justify-content: center;
+  button {
+    cursor: pointer;
+    background-color: $btn-color;
+    border-radius: 5px;
+    border: 1px solid $btn-border;
+    width: $btn-width;
+    height: $btn-height;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      background-color: #ffbb00;
+      border-color: #ffbb00;
+    }
+
+    .bubble {
+      position: absolute;
+      background-color: rgb(2, 214, 55);
+      padding: 5px 10px;
+      border-radius: 10px;
+      color: white;
+      bottom: -13px;
+      left: 50%;
+      white-space: nowrap;
+      transform: translateX(-50%);
+      font-size: 12px;
+    }
+  }
+  .moveposition {
+    width: calc(#{$btn-width} * 2 + #{$gap});
+    gap: 130px;
+  }
+}
+
+.shapescontainer {
+  margin-top: 30px;
+  button {
+    cursor: pointer;
+    background-color: $btn-color;
+    border-radius: 5px;
+    border: 1px solid $btn-border;
+    width: $btn-width;
+    height: $btn-height;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      background-color: #ffbb00;
+      border-color: #ffbb00;
+    }
+  }
+  .row1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: auto;
+    gap: $gap;
+    justify-content: center;
+    max-width: fit-content;
+    grid-template-areas: ". a b c";
+    button:nth-child(1) { grid-area: a; }
+    button:nth-child(2) { grid-area: b; }
+    button:nth-child(3) { grid-area: c; }
+  }
+  .row2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 10px auto;
+    gap: $gap;
+    justify-content: center;
+    max-width: fit-content;
+  }
+}
+.triangleleft {
+  width: 0;
+  height: 0;
+  border-top: 40px solid transparent;
+  border-bottom: 40px solid transparent;
+  border-right: 80px solid $shape-color;
+}
+
+.triangleright {
+  width: 0;
+  height: 0;
+  border-top: 40px solid transparent;
+  border-bottom: 40px solid transparent;
+  border-left: 80px solid $shape-color;
+}
+
+.triangleup {
+  width: 0;
+  height: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 80px solid $shape-color;
+}
+
+.triangledown {
+  width: 0;
+  height: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-top: 80px solid $shape-color;
+}
+
+.square {
+  width: 80px;
+  height: 80px;
+  background-color: $shape-color;
+}
+
+.circle {
+  width: 80px;
+  height: 80px;
+  background-color: $shape-color;
+  border-radius: 50%;
+}
+
+.oval {
+  width: 120px;
+  height: 80px;
+  background-color: $shape-color;
+  border-radius: 50%;
+}
+
+.trapezoid {
+  width: 120px;
+  height: 0;
+  border-bottom: 80px solid $shape-color;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+}
+
+.rectangle {
+  width: 160px;
+  height: 80px;
+  background-color: $shape-color;
+}
+
+.parallelogram {
+  width: 120px;
+  height: 80px;
+  background-color: $shape-color;
+  transform: skew(-20deg);
+}

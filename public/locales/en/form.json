@@ -1,0 +1,17 @@
+{
+    "title": "Form & Table",
+    "home": "Home",
+    "selecttitle": "title",
+    "firstname": "firstname",
+    "lastname": "lastname",
+    "birthday": "birthday",
+    "nationality": "nationality",
+    "citizenId": "citizenId",
+    "gender": "gender",
+    "mobilephone": "mobile phone",
+    "passport": "passport",
+    "expectedSalary": "expectedSalary",
+    "submit": "SUBMIT",
+    "reset": "RESET"
+ }
+ 

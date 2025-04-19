@@ -1,0 +1,30 @@
+.formphone {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+  width: 50%;
+  label {
+    color: red;
+    display: flex;
+    gap: 5px;
+    span {
+      color: black;
+      text-transform: capitalize;
+    }
+  }
+
+  .phoneGroup {
+    display: flex;
+    gap: 8px;
+    flex: 1;
+  }
+
+  .error {
+    color: #ff4d4f;
+    position: absolute;
+    font-size: 10px;
+    bottom: -12px;
+    right: 30px;
+  }
+}
