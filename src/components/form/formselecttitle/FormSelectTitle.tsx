@@ -31,7 +31,7 @@ const FormSelectTitle = ({ name, defaultValue, control, errors,label }: Props) =
                 { value: "Mrs.", label: "Mrs." },
                 { value: "Ms.", label: "Ms." },
               ]}
-              onChange={(value) => field.onChange(value)} // สำคัญมาก!
+              onChange={(value) => field.onChange(value)} 
             />
             <div>
               {errors[name] && (

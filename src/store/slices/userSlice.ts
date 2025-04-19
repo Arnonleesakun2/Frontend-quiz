@@ -44,7 +44,7 @@ const userSlice = createSlice({
       if (index !== -1) {
         state.user[index] = action.payload;
       }
-      state.editData = null; // Clear edit data after successful edit
+      state.editData = null; 
     },
   }
 });

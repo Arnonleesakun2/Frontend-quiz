@@ -1,5 +1,5 @@
 import { Select } from "antd";
-import { Control, Controller } from "react-hook-form";
+import { Controller } from "react-hook-form";
 import style from "./formselect.module.scss";
 
 type Props = {
