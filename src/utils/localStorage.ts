@@ -1,6 +1,10 @@
+interface UserState {
+  user: Record<string, unknown>[];  //�んกำหนด type �ん่�んตามข้อมูล�ん
+}
+
 const isServer = typeof window === 'undefined';
 
-export const loadState = () => {
+export const loadState = (): UserState | undefined => {
   if (isServer) return undefined;
   
   try {
@@ -13,7 +17,7 @@ export const loadState = () => {
   }
 };
 
-export const saveState = (state: any) => {
+export const saveState = (state: UserState): void => {
   if (isServer) return;
   
   try {

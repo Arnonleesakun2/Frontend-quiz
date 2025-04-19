@@ -1,17 +1,17 @@
 import { Input } from "antd";
 import style from "./form.module.scss";
-import { Controller } from "react-hook-form";
+import { Controller, Control, FieldErrors } from "react-hook-form";
 
 type Props = {
   name: string;
   type?: string;
   defaultValue?: string;
-  control: any;
-  errors: any;
-  label:string;
+  control: Control<any>;
+  errors: FieldErrors;
+  label: string;
 };
 
-const FormInput = ({ name, type, defaultValue, control, errors,label }: Props) => {
+const FormInput = ({ name, type, defaultValue, control, errors, label }: Props) => {
   return (
     <div className={style.forminput}>
       <label htmlFor={name}>
@@ -24,10 +24,7 @@ const FormInput = ({ name, type, defaultValue, control, errors,label }: Props) =
         render={({ field }) => (
           <>
             <div className="">
-              <Input
-                {...field}
-                type={type}
-              />
+              <Input {...field} type={type} />
               <div className="">
                 {errors[name] && (
                   <div className={style.error}>

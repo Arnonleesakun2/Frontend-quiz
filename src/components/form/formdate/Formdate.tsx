@@ -3,10 +3,11 @@ import { DatePicker } from "antd";
 import style from "./formdate.module.scss";
 import { useEffect, useState } from "react";
 import dayjs from 'dayjs';
+import type { UseFormSetValue } from "react-hook-form";
 
 type Props = {
   name: string;
-  setValue: any;
+  setValue: UseFormSetValue<any>; 
   errors: any;
   label: string;
   defaultValue?: Date | null;

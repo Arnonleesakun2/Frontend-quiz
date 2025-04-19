@@ -2,9 +2,11 @@ import { Form, Input, InputRef } from "antd";
 import { useRef, useEffect, useState } from "react";
 import style from "./formcitizen.module.scss";
 import React from "react";
+import type { UseFormSetValue } from "react-hook-form";
+
 type Props = {
   name: string;
-  setValue: any;
+  setValue: UseFormSetValue<any>;
   errors: any;
   label: string;
   defaultValue?: string;  
